@@ -341,9 +341,8 @@ class Formatter implements FormatterInterface
     }
 
     /**
-     * @param TestworkEvent\AfterSuiteTested $event
      */
-    public function onAfterSuiteTested(TestworkEvent\AfterSuiteTested $event)
+    public function onAfterSuiteTested()
     {
         $this->suites[] = $this->currentSuite;
     }
